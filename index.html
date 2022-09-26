@@ -43,6 +43,107 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+
+          
+           <!-- TACVIS -->
+           <tr onmouseout="tacvis_stop()" onmouseover="tacvis_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <div class="two" id='tacvis_under'>
+                  <img src="images/tacvis_under.png" width='180'/>
+                </div>
+                <img src="images/tacvis_splash.png" width='180' id='tacvis_splash'/>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function tacvis_start() {
+                  document.getElementById('tacvis_splash').style.opacity = "0";
+                  document.getElementById('tacvis_under').style.opacity = "1";
+                }
+
+                function tacvis_stop() {
+                  document.getElementById('tacvis_splash').style.opacity = "1";
+                  document.getElementById('tacvis_under').style.opacity = "0";
+                }
+                tacvis_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->
+              <papertitle>Learning Self-Supervised Representations from Vision and Touch
+                  for Active Sliding Perception of Deformable Surfaces</papertitle>
+              <br>
+              <!-- AUTHORS -->
+              <b>Justin Kerr</b>*, Huang Huang*, Albert Wilcox, Ryan Hoque, Jeffrey Ichnowski, Roberto Calandra, and Ken Goldberg
+              <br>
+              *Equal contribution
+              <br>
+              <!-- CONFERENCE -->
+              Submitted to <em>ICRA</em> 2023
+              <!-- LINKS -->
+              <br>
+              arXiv Uploading...
+              <!-- <a href="https://sites.google.com/view/evo-nerf">Website</a>
+              /
+              <a href="https://openreview.net/forum?id=Bxr45keYrf">OpenReview</a> -->
+              <p></p>
+              <!-- SUMMARY -->
+              We collect spatially paired vision and tactile inputs with a custom rig to train cross-modal representations. We then show these representations can be used for multiple active and passive perception tasks without fine-tuning.
+            </td>
+          </tr>
+
+          <!-- EVO-NERF -->
+          <tr onmouseout="evonerf_stop()" onmouseover="evonerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <div class="two" id='evonerf_under'>
+                  <img src="images/evonerf_early_stop.png" width='180'/>
+                </div>
+                <video  width=115% height=100% muted autoplay loop id="evonerf_splash">
+                  <source src="images/evonerf_splash.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function evonerf_start() {
+                  document.getElementById('evonerf_splash').style.opacity = "0";
+                  document.getElementById('evonerf_under').style.opacity = "1";
+                }
+
+                function evonerf_stop() {
+                  document.getElementById('evonerf_splash').style.opacity = "1";
+                  document.getElementById('evonerf_under').style.opacity = "0";
+                }
+                evonerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->
+              <a href="https://sites.google.com/view/evo-nerf">
+                <papertitle>Evo-NeRF: Evolving NeRF for Sequential Robot Grasping</papertitle>
+              </a>
+              <br>
+              <!-- AUTHORS -->
+              <b>Justin Kerr</b>, Letian Fu, Huang Huang, Yahav Avigal, Matthew Tancik, Jeffrey Ichnowski, Angjoo Kanazawa, Ken Goldberg
+              <br>
+              <!-- CONFERENCE -->
+              <em>CoRL</em> 2022, <b>Oral Presentation</b>
+              <!-- LINKS -->
+              <br>
+              <a href="https://sites.google.com/view/evo-nerf">Website</a>
+              /
+              <a href="https://openreview.net/forum?id=Bxr45keYrf">OpenReview</a>
+              <p></p>
+              <!-- SUMMARY -->
+              NeRF functions as a real-time, updateable scene reconstruction for rapidly grasping table-top transparent objects.
+              Geometry regularization speeds and improves scene geometry, and a NeRF-adapted grasping network learns to ignore floaters.
+            </td>
+          </tr>
+
           <!-- LUV -->
           <tr onmouseout="luv_stop()" onmouseover="luv_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -99,45 +200,6 @@
           </tr>
           
         </tbody></table>
-        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Personal Projects</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="0"><tbody>
-          <tr>
-            <td style="padding:0px;width:40%;vertical-align:middle;text-align:center;">
-              <a href="images/segway_pic.jpeg"><img src="images/segway_pic.jpeg" alt="segway" height="210"></a>
-            </td>
-            <td width="75%" valign="center">
-              <a href="https://github.com/kerrj/segway">Miniature self-balancing robot</a>, built from scratch using off-the-shelf parts and 
-              able to follow waypoints using model-predictive control for balance and 
-              <a href="https://www.ri.cmu.edu/pub_files/pub3/coulter_r_craig_1992_1/coulter_r_craig_1992_1.pdf">pure pursuit</a> for path following.
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:40%;vertical-align:middle;text-align: center;">
-              <a href="images/mapper_pic.jpeg"><img src="images/mapper_pic.jpeg" alt="mapping robot" height="182"></a>
-              <a href="images/map_pic.png"><img src="images/map_pic.png" alt="map" height="182"></a>
-            </td>
-            <td width="75%" valign="center">
-              <a href="https://github.com/kerrj/mapper">Indoor mapping robot</a> built from scratch with a cheap planar lidar which autonomously mapped my house using a 
-              <a href="https://research.google/pubs/pub45466/">Google Cartographer</a>-inspired SLAM algorithm, 
-                alongside a grid path planner for exploration and <a href="https://en.wikipedia.org/wiki/Dynamic_window_approach">DWA</a> controller for path following. 
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <p>
-                Source code taken from <a href="https://jonbarron.info/">Jon Barron's site.</a>
-              </p>
-            </td>
-          </tr>
-        </tbody></table> -->
       </td>
     </tr>
   </table>
