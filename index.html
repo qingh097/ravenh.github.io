@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Huang(Raven) Huang</title>
+  
+  <meta name="author" content="Huang Huang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Huang Huang</name>
+              </p>
+              <p>I am a third year PhD student in EECS at UC Berkeley in the <a href="https://autolab.berkeley.edu/">AUTOLAB</a>, advised by Prof. Ken Goldberg. My research focuses on robot learning for manipulation including lateral access mechanical search, deformable object manipulation and grasping. Recently I have also worked on the representation learning between tactile and vision. 
+              </p>
+              <p>
+                I got my M.S. degree in ME at UT Austin advised by Prof. Luis Sentis, working on control and modelling of human in exoskeleton.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:huangr@berkeley.edu">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?hl=en&user=N_KDBGcAAAAJ">Google Scholar</a> &nbsp/&nbsp
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/raven_img.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/raven_img.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <!-- LUV -->
+          <tr onmouseout="luv_stop()" onmouseover="luv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <div class="two" id='luv_splash'>
+                  <video  width=115% height=100% muted autoplay loop>
+                    <source src="images/random_start.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- <img src='images/luv_splash.png' width="180" id="luv_under"> -->
+                <video  width=115% height=100% muted autoplay loop id="luv_under">
+                  <source src="images/luv_smoothing.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function luv_start() {
+                  document.getElementById('luv_splash').style.opacity = "0";
+                  document.getElementById('luv_under').style.opacity = "1";
+                }
+
+                function luv_stop() {
+                  document.getElementById('luv_splash').style.opacity = "1";
+                  document.getElementById('luv_under').style.opacity = "0";
+                }
+                luv_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->
+              <a href="https://sites.google.com/berkeley.edu/luv">
+                <papertitle>All You Need is LUV: Unsupervised Collection of Labeled Images using Invisible UV Fluorescent Indicators</papertitle>
+              </a>
+              <br>
+              <!-- AUTHORS -->
+              Brijen Thananjeyan*, Justin Kerr*, Huang Huang, Joseph E. Gonzalez, Ken Goldberg
+              <br>
+              * Equal contribution
+              <br>
+              <!-- CONFERENCE -->
+              <em>IROS</em> 2022
+              <!-- LINKS -->
+              <br>
+              <a href="https://sites.google.com/berkeley.edu/luv">Website</a>
+              /
+              <a href="https://arxiv.org/abs/2203.04566">arXiv</a>
+              <p></p>
+              <!-- SUMMARY -->
+              <p>Fluorescent paint enables inexpensive (<$200) and self-supervised data collection of dense image annotations without altering objects' appearance. We demonstrate its broad applicability to several manipulation domains.</p>
+            </td>
+          </tr>
+          
+        </tbody></table>
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Personal Projects</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="0"><tbody>
+          <tr>
+            <td style="padding:0px;width:40%;vertical-align:middle;text-align:center;">
+              <a href="images/segway_pic.jpeg"><img src="images/segway_pic.jpeg" alt="segway" height="210"></a>
+            </td>
+            <td width="75%" valign="center">
+              <a href="https://github.com/kerrj/segway">Miniature self-balancing robot</a>, built from scratch using off-the-shelf parts and 
+              able to follow waypoints using model-predictive control for balance and 
+              <a href="https://www.ri.cmu.edu/pub_files/pub3/coulter_r_craig_1992_1/coulter_r_craig_1992_1.pdf">pure pursuit</a> for path following.
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:40%;vertical-align:middle;text-align: center;">
+              <a href="images/mapper_pic.jpeg"><img src="images/mapper_pic.jpeg" alt="mapping robot" height="182"></a>
+              <a href="images/map_pic.png"><img src="images/map_pic.png" alt="map" height="182"></a>
+            </td>
+            <td width="75%" valign="center">
+              <a href="https://github.com/kerrj/mapper">Indoor mapping robot</a> built from scratch with a cheap planar lidar which autonomously mapped my house using a 
+              <a href="https://research.google/pubs/pub45466/">Google Cartographer</a>-inspired SLAM algorithm, 
+                alongside a grid path planner for exploration and <a href="https://en.wikipedia.org/wiki/Dynamic_window_approach">DWA</a> controller for path following. 
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <p>
+                Source code taken from <a href="https://jonbarron.info/">Jon Barron's site.</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table> -->
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
