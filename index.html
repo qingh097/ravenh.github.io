@@ -20,14 +20,13 @@
               <p style="text-align:center">
                 <name>Huang Huang</name>
               </p>
-              <p>I am a third year PhD student in EECS at UC Berkeley in the <a href="https://autolab.berkeley.edu/">AUTOLAB</a>, advised by Prof. Ken Goldberg. My research focuses on robot learning for manipulation including lateral access mechanical search, deformable object manipulation and grasping. Recently I have also worked on the representation learning between tactile and vision. 
-              </p>
-              <p>
+              <p>I am a third year PhD student in EECS at UC Berkeley, advised by Prof. Ken Goldberg. My research focuses on robot learning for manipulation including lateral access mechanical search, deformable object manipulation and grasping. Recently I have also worked on the representation learning between tactile and vision. 
                 I got my M.S. degree in ME at UT Austin advised by Prof. Luis Sentis, working on control and modelling of human in exoskeleton.
               </p>
               <p style="text-align:center">
                 <a href="mailto:huangr@berkeley.edu">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?hl=en&user=N_KDBGcAAAAJ">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?hl=en&user=N_KDBGcAAAAJ">Google Scholar</a> 
+                <!-- &nbsp/&nbsp -->
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -42,10 +41,8 @@
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody> 
 
-          
            <!-- TACVIS -->
            <tr onmouseout="tacvis_stop()" onmouseover="tacvis_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -81,16 +78,55 @@
               *Equal contribution
               <br>
               <!-- CONFERENCE -->
-              Submitted to <em>ICRA</em> 2023
-              <!-- LINKS -->
-              <br>
-              arXiv Uploading...
-              <!-- <a href="https://sites.google.com/view/evo-nerf">Website</a>
-              /
-              <a href="https://openreview.net/forum?id=Bxr45keYrf">OpenReview</a> -->
+              <em>ICRA</em> 2023 (Submitted)
               <p></p>
               <!-- SUMMARY -->
               We collect spatially paired vision and tactile inputs with a custom rig to train cross-modal representations. We then show these representations can be used for multiple active and passive perception tasks without fine-tuning.
+            </td>
+          </tr>
+
+          <!-- staxray -->
+          <tr onmouseout="staxray_stop()" onmouseover="staxray_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <div class="two" id='staxray_destackr'>
+                  <img src="images/staxray_destackr.png" width='180'/>
+                </div>
+                <img src="images/staxray_restack.png" width='180' id='staxray_restack'/>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function staxray_start() {
+                  document.getElementById('staxray_restack').style.opacity = "0";
+                  document.getElementById('staxray_destackr').style.opacity = "1";
+                }
+
+                function staxray_stop() {
+                  document.getElementById('staxray_restack').style.opacity = "1";
+                  document.getElementById('staxray_destackr').style.opacity = "0";
+                }
+                staxray_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->  
+                <a href="https://sites.google.com/berkeley.edu/stax-ray">
+                <papertitle>Mechanical Search on Shelves with Efficient
+                  Stacking and Destacking of Objects</papertitle>
+                </a>
+              <br>
+              <!-- AUTHORS -->
+                <b>Huang Huang</b>*, Letian Fu*, Michael Danielczuk, Chung Min Kim,
+                Zachary Tam, Jeffrey Ichnowski, Anelia Angelova, Brian Ichter, and
+                Ken Goldberg, <small>*Equal contribution</small>
+              <br>
+              <!-- CONFERENCE -->
+              <em>ISRR</em> 2022, <a href="https://arxiv.org/pdf/2207.02347.pdf">arXiv</a>
+              <p></p>
+              <!-- SUMMARY -->
+              We develop two policies for lateral access mechanical search with stacked objects. Both policies utilize stacking and destacking actions and can reveal the
+              target object with 82–100% success in simulation outperforming the baseline by up to 66%, and can achieve 67–100% success in physical experiments.
             </td>
           </tr>
 
@@ -128,15 +164,10 @@
               </a>
               <br>
               <!-- AUTHORS -->
-              <b>Justin Kerr</b>, Letian Fu, Huang Huang, Yahav Avigal, Matthew Tancik, Jeffrey Ichnowski, Angjoo Kanazawa, Ken Goldberg
+              Justin Kerr, Letian Fu, <b>Huang Huang</b>, Yahav Avigal, Matthew Tancik, Jeffrey Ichnowski, Angjoo Kanazawa, Ken Goldberg
               <br>
               <!-- CONFERENCE -->
-              <em>CoRL</em> 2022, <b>Oral Presentation</b>
-              <!-- LINKS -->
-              <br>
-              <a href="https://sites.google.com/view/evo-nerf">Website</a>
-              /
-              <a href="https://openreview.net/forum?id=Bxr45keYrf">OpenReview</a>
+              <em>CoRL</em> 2022, <b>Oral Presentation</b>, <a href="https://openreview.net/forum?id=Bxr45keYrf">OpenReview</a>
               <p></p>
               <!-- SUMMARY -->
               NeRF functions as a real-time, updateable scene reconstruction for rapidly grasping table-top transparent objects.
@@ -182,17 +213,12 @@
               </a>
               <br>
               <!-- AUTHORS -->
-              Brijen Thananjeyan*, Justin Kerr*, Huang Huang, Joseph E. Gonzalez, Ken Goldberg
+              Brijen Thananjeyan*, Justin Kerr*, <b>Huang Huang</b>, Joseph E. Gonzalez, Ken Goldberg
               <br>
               * Equal contribution
               <br>
               <!-- CONFERENCE -->
-              <em>IROS</em> 2022
-              <!-- LINKS -->
-              <br>
-              <a href="https://sites.google.com/berkeley.edu/luv">Website</a>
-              /
-              <a href="https://arxiv.org/abs/2203.04566">arXiv</a>
+              <em>IROS</em> 2022, <a href="https://arxiv.org/abs/2203.04566">arXiv</a>
               <p></p>
               <!-- SUMMARY -->
               <p>Fluorescent paint enables inexpensive (<$200) and self-supervised data collection of dense image annotations without altering objects' appearance. We demonstrate its broad applicability to several manipulation domains.</p>
