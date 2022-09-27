@@ -16,7 +16,7 @@
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <td style="padding:2.5%;width:73%;vertical-align:middle">
               <p style="text-align:center">
                 <name>Huang Huang</name>
               </p>
@@ -29,7 +29,7 @@
                 <!-- &nbsp/&nbsp -->
               </p>
             </td>
-            <td style="padding:2.5%;width:30%;max-width:30%">
+            <td style="padding:2.5%;width:20%;max-width:20%">
               <a href="images/raven_img.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/raven_img.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
@@ -222,6 +222,47 @@
             </td>
           </tr>
           
+          <!-- acc -->
+          <tr onmouseout="acc_stop()" onmouseover="acc_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <div class="two" id='acc1'>
+                  <img src="images/acc1.jpg" width='180'/>
+                </div>
+                <img src="images/acc2.jpg" width='180' id='acc2'/>
+              </div>
+              <!-- SCRIPT FOR HOVERING -->
+              <script type="text/javascript">
+                function acc_start() {
+                  document.getElementById('acc1').style.opacity = "0";
+                  document.getElementById('acc2').style.opacity = "1";
+                }
+
+                function acc_stop() {
+                  document.getElementById('acc1').style.opacity = "1";
+                  document.getElementById('acc2').style.opacity = "0";
+                }
+                acc_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->                 
+                <papertitle>Adaptive compliance shaping with human impedance estimation</papertitle>
+              <br>
+              <!-- AUTHORS -->
+              Huang Huang, Henry F Cappel, Gray C Thomas, Binghan He, Luis Sentis
+              <br>
+              <!-- CONFERENCE -->
+              <em>ACC</em> 2020, <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9147875">paper</a>
+              <p></p>
+              <!-- SUMMARY -->
+              We propose an amplification controller with online-adapted exoskeleton compliance that takes advantage of a novel, online human stiffness estimator
+              based on surface electromyography (sEMG) sensors and stretch sensors connected to the forearm and upper arm of the human. Online estimation
+              of stiffness is shown to improve the bandwidth of strength amplification while remaining robustly stable.
+            </td>
+          </tr>
+
         </tbody></table>
       </td>
     </tr>
