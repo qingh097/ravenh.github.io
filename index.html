@@ -3,7 +3,7 @@
 
   <title>Huang(Raven) Huang</title>
   
-  <meta name="author" content="Huang Huang">
+  <meta name="author" content="Huang(Raven) Huang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -16,9 +16,9 @@
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:73%;vertical-align:middle">
+            <td style="padding:2.5%;width:60%;vertical-align:middle">
               <p style="text-align:center">
-                <name>Huang Huang</name>
+                <name>Huang(Raven) Huang</name>
               </p>
               <p>I am a third year PhD student in EECS at UC Berkeley, advised by Prof. Ken Goldberg. My research focuses on robot learning for manipulation including lateral access mechanical search, deformable object manipulation and grasping. Recently I have also worked on the representation learning between tactile and vision. 
                 I received my M.S. degree in ME at UT Austin advised by Prof. Luis Sentis, working on control and modelling of human in exoskeleton.
@@ -29,15 +29,15 @@
                 <!-- &nbsp/&nbsp -->
               </p>
             </td>
-            <td style="padding:2.5%;width:20%;max-width:20%">
-              <a href="images/raven_img.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/raven_img.jpg" class="hoverZoomLink"></a>
+            <td style="padding:2.5%;width:100%;max-width:100%">
+              <a href="images/selfie.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/selfie.jpeg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
+              <heading>Selected Publications</heading>
             </td>
           </tr>
         </tbody></table>
@@ -129,6 +129,37 @@
             </td>
           </tr>
 
+          <!-- dmodo -->
+          <tr onmouseout="dmodo_stop()" onmouseover="dmodo_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <!-- IMAGES -->
+              <div class="one">
+                <video  width=115% height=100% muted autoplay loop id="dmodo">
+                  <source src="images/dmodo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- TITLE -->  
+                <a href="https://sites.google.com/view/single-arm-fling/home">
+                <papertitle>Efficiently Learning Single-Arm Fling Motions to Smooth Garments</papertitle>
+                </a>
+              <br>
+              <!-- AUTHORS -->
+                Lawrence Yunliang Chen*, <b>Huang Huang</b>*, Ellen Novoseller, Daniel Seita, Jeffrey Ichnowski, Michael Laskey, Ken Goldberg,
+                 <small>*Equal contribution</small>
+              <br>
+              <!-- CONFERENCE -->
+              <em>ISRR</em> 2022, <a href="https://arxiv.org/abs/2206.08921">arXiv</a>
+              <p></p>
+              <!-- SUMMARY -->
+              We develop two policies for lateral access mechanical search with stacked objects. Both policies utilize stacking and destacking actions and can reveal the
+              target object with 82–100% success in simulation outperforming the baseline by up to 66%, and can achieve 67–100% success in physical experiments.
+            </td>
+          </tr>
+
           <!-- EVO-NERF -->
           <tr onmouseout="evonerf_stop()" onmouseover="evonerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -169,8 +200,8 @@
               <em>CoRL</em> 2022, <b>Oral Presentation</b>, <a href="https://openreview.net/forum?id=Bxr45keYrf">OpenReview</a>
               <p></p>
               <!-- SUMMARY -->
-              NeRF functions as a real-time, updateable scene reconstruction for rapidly grasping table-top transparent objects.
-              Geometry regularization speeds and improves scene geometry, and a NeRF-adapted grasping network learns to ignore floaters.
+              We propose Evo-NeRF with additional geometry regularizations improving performance in rapid capture settings to achieve real-time, updateable scene reconstruction for rapidly grasping table-top transparent objects.
+              We train a NeRF-adapted grasping network learns to ignore floaters.
             </td>
           </tr>
 
@@ -228,9 +259,9 @@
               <!-- IMAGES -->
               <div class="one">
                 <div class="two" id='acc1'>
-                  <img src="images/acc1.jpg" width='180'/>
+                  <img src="images/acc1.png" width='180'/>
                 </div>
-                <img src="images/acc2.jpg" width='180' id='acc2'/>
+                <img src="images/acc2.png" width='180' id='acc2'/>
               </div>
               <!-- SCRIPT FOR HOVERING -->
               <script type="text/javascript">
