@@ -21,7 +21,7 @@
                 <name>Huang Huang</name>
               </p>
               <p>I am a third year PhD student in EECS at UC Berkeley, advised by Prof. Ken Goldberg. My research focuses on robot learning for manipulation including lateral access mechanical search, deformable object manipulation and grasping. Recently I have also worked on the representation learning between tactile and vision. 
-                I got my M.S. degree in ME at UT Austin advised by Prof. Luis Sentis, working on control and modelling of human in exoskeleton.
+                I received my M.S. degree in ME at UT Austin advised by Prof. Luis Sentis, working on control and modelling of human in exoskeleton.
               </p>
               <p style="text-align:center">
                 <a href="mailto:huangr@berkeley.edu">Email</a> &nbsp/&nbsp
@@ -29,7 +29,7 @@
                 <!-- &nbsp/&nbsp -->
               </p>
             </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
+            <td style="padding:2.5%;width:30%;max-width:30%">
               <a href="images/raven_img.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/raven_img.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
@@ -89,8 +89,8 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <!-- IMAGES -->
               <div class="one">
-                <div class="two" id='staxray_destackr'>
-                  <img src="images/staxray_destackr.png" width='180'/>
+                <div class="two" id='staxray_destack'>
+                  <img src="images/staxray_destack.png" width='180'/>
                 </div>
                 <img src="images/staxray_restack.png" width='180' id='staxray_restack'/>
               </div>
@@ -174,53 +174,51 @@
             </td>
           </tr>
 
-          <!-- LUV -->
-          <tr onmouseout="luv_stop()" onmouseover="luv_start()">
+          <!-- prc -->
+          <tr onmouseout="prc_stop()" onmouseover="prc_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <!-- IMAGES -->
               <div class="one">
-                <div class="two" id='luv_splash'>
-                  <video  width=115% height=100% muted autoplay loop>
-                    <source src="images/random_start.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
+                <div class="two" id='prc_splash'>
+                  <img src="images/prc_teaser.jpg" width='180'/>
                 </div>
-                <!-- <img src='images/luv_splash.png' width="180" id="luv_under"> -->
-                <video  width=115% height=100% muted autoplay loop id="luv_under">
-                  <source src="images/luv_smoothing.mp4" type="video/mp4">
+                <video  width=115% height=100% muted autoplay loop id="prc_vid">
+                  <source src="images/prc_tossvideo.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
               <!-- SCRIPT FOR HOVERING -->
               <script type="text/javascript">
-                function luv_start() {
-                  document.getElementById('luv_splash').style.opacity = "0";
-                  document.getElementById('luv_under').style.opacity = "1";
+                function prc_start() {
+                  document.getElementById('prc_splash').style.opacity = "0";
+                  document.getElementById('prc_vid').style.opacity = "1";
                 }
 
-                function luv_stop() {
-                  document.getElementById('luv_splash').style.opacity = "1";
-                  document.getElementById('luv_under').style.opacity = "0";
+                function prc_stop() {
+                  document.getElementById('prc_splash').style.opacity = "1";
+                  document.getElementById('prc_vid').style.opacity = "0";
                 }
-                luv_stop()
+                prc_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <!-- TITLE -->
-              <a href="https://sites.google.com/berkeley.edu/luv">
-                <papertitle>All You Need is LUV: Unsupervised Collection of Labeled Images using Invisible UV Fluorescent Indicators</papertitle>
-              </a>
+              <!-- TITLE -->  
+                <a href="https://sites.google.com/view/dynamic-cable">
+                <papertitle>Real2Sim2Real: Self-Supervised Learning of Physical
+                  Single-Step Dynamic Actions for Planar Robot Casting</papertitle>
+                </a>
               <br>
               <!-- AUTHORS -->
-              Brijen Thananjeyan*, Justin Kerr*, <b>Huang Huang</b>, Joseph E. Gonzalez, Ken Goldberg
-              <br>
-              * Equal contribution
+              Vincent Lim*, <b>Huang Huang</b>*, Lawrence Yunliang Chen, Jonathan Wang,
+              Jeffrey Ichnowski, Daniel Seita, Michael Laskey, Ken Goldberg, <small>*Equal contribution</small>
               <br>
               <!-- CONFERENCE -->
-              <em>IROS</em> 2022, <a href="https://arxiv.org/abs/2203.04566">arXiv</a>
+              <em>ICRA</em> 2021, <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9811651">paper</a>
               <p></p>
               <!-- SUMMARY -->
-              <p>Fluorescent paint enables inexpensive (<$200) and self-supervised data collection of dense image annotations without altering objects' appearance. We demonstrate its broad applicability to several manipulation domains.</p>
+              We collect planar robot casting data in real in a self-supervised way to tune the simulation in Isaac Gym. We then collect more data in the tuned simulator. 
+              Combined with upsampled real data, we learn a policy for planar robot casting to reach to a given target, attaining median error distance (as % of cable length) ranging
+              from 8% to 14%.
             </td>
           </tr>
           
